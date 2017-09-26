@@ -8,7 +8,7 @@
     "build": "preact build",
     "serve": "preact build && preact serve",
     "dev": "preact watch",
-    "test": "eslint src && preact test"
+    "lint": "eslint src"
   },
   "eslintConfig": {
     "extends": "eslint-config-synacor"
