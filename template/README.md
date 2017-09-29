@@ -1,7 +1,5 @@
 # {{ name }}
 
-> {{ description }}
-
 ## CLI Commands
 
 ``` bash
