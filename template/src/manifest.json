@@ -1,6 +1,6 @@
 {
-  "name": "Preact PWA",
-  "short_name": "Preact PWA",
+  "name": "{{ name }}",
+  "short_name": "{{ name }}",
   "start_url": "/",
   "display": "standalone",
   "orientation": "portrait",
