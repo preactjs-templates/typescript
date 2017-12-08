@@ -13,16 +13,18 @@
   "eslintConfig": {
     "extends": "eslint-config-synacor"
   },
-  "eslintIgnore": ["build/*"],
+  "eslintIgnore": [
+    "build/*"
+  ],
   "devDependencies": {
-    "eslint": "^4.5.0",
-    "eslint-config-synacor": "^1.1.0",
+    "eslint": "^4.9.0",
+    "eslint-config-synacor": "^2.0.2",
     "if-env": "^1.0.0",
-    "preact-cli": "^2.0.0"
+    "preact-cli": "^2.0.1"
   },
   "dependencies": {
-    "preact": "^8.2.1",
+    "preact": "^8.2.6",
     "preact-compat": "^3.17.0",
-    "preact-router": "^2.5.5"
+    "preact-router": "^2.5.7"
   }
 }
