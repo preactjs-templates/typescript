@@ -1,5 +1,7 @@
 # preact-default-boilerplate
 
+![Lighthouse-Badge](https://img.shields.io/badge/lighthouse-100%2F100-brightgreen.svg)
+
 ## Documentation
 - This is the default template for [preact-cli](https://github.com/developit/preact-cli).
 - [For Preact](https://preactjs.com/): General information about how to work with Preact, not specific to this template
