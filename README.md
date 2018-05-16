@@ -9,7 +9,7 @@
 
 ```bash
 $ npm install -g preact-cli
-$ preact create aerian-studios/preact-typescript my-project
+$ preact create aerian-studios/preact-default-typescript my-project
 $ cd my-project
 $ npm install
 $ npm run dev
@@ -30,6 +30,8 @@ Development server runs on port `8080`. If the default port is already in use on
 *   `npm run lint`: Pass TypeScript files using TSLint
 
 *   `npm run test`: Run Jest and [`preact-render-spy`](https://github.com/mzgoddard/preact-render-spy) for your tests
+
+*   `npm run css-types`: Generate .d.ts types for css files using [`typed-css-modules`](https://github.com/Quramy/typed-css-modules).
 
 ### How to Test
 
