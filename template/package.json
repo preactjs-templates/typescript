@@ -15,7 +15,7 @@
     },
     "lint-staged": {
         "*.{js,jsx,css,md,scss}": ["prettier --write", "git add"],
-        "*.{ts,tsx}": ["eslint --fix", "prettier --write", "git add"]
+        "*.{ts,tsx}": ["tslint --fix", "git add"]
     },
     "eslintConfig": {
         "extends": "eslint-config-aerian"
@@ -23,8 +23,6 @@
     "eslintIgnore": ["build/*"],
     "devDependencies": {
         "@types/jest": "^22.2.3",
-        "eslint": "^4.19.1",
-        "eslint-config-aerian": "^1.0.1",
         "husky": "^0.14.3",
         "identity-obj-proxy": "^3.0.0",
         "if-env": "^1.0.0",
@@ -36,7 +34,10 @@
         "ts-jest": "^22.4.6",
         "ts-loader": "3.5.0",
         "tslint": "^5.10.0",
-        "tslint-config-aerian": "^1.0.2",
+        "tslint-config-prettier": "^1.15.0",
+        "tslint-consistent-codestyle": "^1.13.3",
+        "tslint-eslint-rules": "^5.4.0",
+        "tslint-react": "^3.6.0",
         "typescript": "^2.8.3",
         "typings-for-css-modules-loader": "^1.7.0"
     },
@@ -44,6 +45,10 @@
         "preact": "^8.2.6",
         "preact-compat": "^3.17.0",
         "preact-router": "^2.5.7"
+    },
+    "peerDependencies": {
+        "prettier": ">1.0.0",
+        "tslint": ">5.0.0"
     },
     "jest": {
         "transform": {
