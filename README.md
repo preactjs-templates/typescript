@@ -39,7 +39,7 @@ your machine it will start the development server on a random port.
 
 ### How to Test
 
-The `default-typescript` template provides a basic test setup with Jest and
+The `typescript` template provides a basic test setup with Jest and
 [`preact-render-spy`](https://github.com/mzgoddard/preact-render-spy). You are
 free to change preact-render-spy with any other assertion library. The advantage
 of it is that it supports a similiar terminology and feature set as the Enzyme
