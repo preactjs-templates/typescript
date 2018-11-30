@@ -1,7 +1,8 @@
 import { Component, h } from "preact";
 import * as style from "./style.css";
 
-export default class Home extends Component {
+interface Props {}
+export default class Home extends Component<Props> {
     public render() {
         return (
             <div class={style.home}>

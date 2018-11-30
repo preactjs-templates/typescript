@@ -2,10 +2,8 @@ import { Component, h } from "preact";
 import { Route, Router, RouterOnChangeArgs } from "preact-router";
 
 import Home from "../routes/home";
-// import Home from "async!../routes/home";
 import Profile from "../routes/profile";
 import Header from "./header";
-// import Profile from 'async!../routes/profile';
 
 if ((module as any).hot) {
     // tslint:disable-next-line:no-var-requires
