@@ -2,16 +2,16 @@
 
 ## Documentation
 
-*   This is a TypeScript version of the default template for
+-   This is a TypeScript version of the default template for
     [preact-cli](https://github.com/developit/preact-cli).
-*   [For Preact](https://preactjs.com/): General information about how to work
+-   [For Preact](https://preactjs.com/): General information about how to work
     with Preact, not specific to this template
 
 ## Usage
 
 ```bash
 $ npm install -g preact-cli
-$ preact create aerian-studios/preact-default-typescript my-project
+$ preact create typescript my-project
 $ cd my-project
 $ npm install
 $ npm run dev
@@ -22,18 +22,18 @@ your machine it will start the development server on a random port.
 
 ## Commands
 
-*   `npm run start`: Runs `serve` or `dev`, depending on `NODE_ENV` value.
+-   `npm run start`: Runs `serve` or `dev`, depending on `NODE_ENV` value.
     Defaults to `dev server`
 
-*   `npm run dev`: Run a development, HMR server
+-   `npm run dev`: Run a development, HMR server
 
-*   `npm run serve`: Run a production-like server
+-   `npm run serve`: Run a production-like server
 
-*   `npm run build`: Production-ready build
+-   `npm run build`: Production-ready build
 
-*   `npm run lint`: Pass TypeScript files using TSLint
+-   `npm run lint`: Pass TypeScript files using TSLint
 
-*   `npm run test`: Run Jest and
+-   `npm run test`: Run Jest and
     [`preact-render-spy`](https://github.com/mzgoddard/preact-render-spy) for
     your tests
 
@@ -50,4 +50,4 @@ described in the
 [Jest docs](https://facebook.github.io/jest/docs/en/cli.html#using-with-npm-scripts).
 For example, running jest in watch mode would be :
 
-*   `npm run test -- --watch` instead of `jest --watch`
+-   `npm run test -- --watch` instead of `jest --watch`
