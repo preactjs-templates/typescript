@@ -15,8 +15,8 @@ export default function(config, env, helpers) {
     });
 
     config.module.loaders.push({
-        test: /\.[tj]sx?$/,
-        loader: "ts-loader"
+        test: /\.tsx?$/,
+        loader: "async!ts-loader"
     });
 
     // Use any `index` file, not just index.js
