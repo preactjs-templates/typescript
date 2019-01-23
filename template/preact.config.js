@@ -15,7 +15,7 @@ export default function(config, env, helpers) {
     });
 
     config.module.loaders.push({
-        test: /\.tsx?$/,
+        test: /\.[tj]sx?$/,
         loader: "async!ts-loader"
     });
 
