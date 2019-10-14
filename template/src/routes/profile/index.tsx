@@ -1,4 +1,5 @@
-import { Component, h } from "preact";
+import { h } from "preact";
+import { useCallback, useEffect, useState } from "preact/hooks";
 import * as style from "./style.css";
 
 interface Props {
@@ -9,46 +10,44 @@ interface State {
     time: number;
     count: number;
 }
-export default class Profile extends Component<Props, State> {
-    public state = {
-        time: Date.now(),
-        count: 10
-    };
 
-    public timer?: number;
+const Profile: preact.FunctionalComponent<Props> = props => {
+    const { user } = props;
+    const [state, setState] = useState<State>({ time: Date.now(), count: 10 });
+
+    let timer: number;
 
     // gets called when this route is navigated to
-    public componentDidMount() {
-        // start a timer for the clock:
-        this.timer = window.setInterval(this.updateTime, 1000);
-    }
+    useEffect(() => {
+        timer = window.setInterval(
+            () => setState({ ...state, time: Date.now() }),
+            1000
+        );
 
-    // gets called just before navigating away from the route
-    public componentWillUnmount() {
-        clearInterval(this.timer);
-    }
+        // gets called just before navigating away from the route
+        return () => {
+            clearInterval(timer);
+        };
+    }, []);
 
     // update the current time
-    public updateTime = () => {
-        this.setState({ time: Date.now() });
-    };
+    const increment = useCallback(() => {
+        setState({ ...state, count: state.count + 1 });
+    }, [state.count]);
 
-    public increment = () => {
-        this.setState({ count: this.state.count + 1 });
-    };
-    public render({ user }: Props, { time, count }: State) {
-        return (
-            <div class={style.profile}>
-                <h1>Profile: {user}</h1>
-                <p>This is the user profile for a user named {user}.</p>
+    return (
+        <div class={style.profile}>
+            <h1>Profile: {user}</h1>
+            <p>This is the user profile for a user named {user}.</p>
 
-                <div>Current time: {new Date(time).toLocaleString()}</div>
+            <div>Current time: {new Date(state.time).toLocaleString()}</div>
 
-                <p>
-                    <button onClick={this.increment}>Click Me</button> Clicked{" "}
-                    {count} times.
-                </p>
-            </div>
-        );
-    }
-}
+            <p>
+                <button onClick={increment}>Click Me</button> Clicked{" "}
+                {state.count} times.
+            </p>
+        </div>
+    );
+};
+
+export default Profile;
