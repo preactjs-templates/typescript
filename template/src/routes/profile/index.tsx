@@ -9,7 +9,7 @@ interface Props {
 const Profile: preact.FunctionalComponent<Props> = props => {
     const { user } = props;
     const [time, setTime] = useState<number>(Date.now());
-    const [count, setCount] = useState<number>(10);
+    const [count, setCount] = useState<number>(0);
 
     let timer: number;
 
