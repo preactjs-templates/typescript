@@ -24,9 +24,9 @@ const Profile: preact.FunctionalComponent<Props> = props => {
     }, []);
 
     // update the current time
-    const increment = useCallback(() => {
+    const increment = () => {
         setCount(count + 1);
-    }, [count]);
+    };
 
     return (
         <div class={style.profile}>
