@@ -11,11 +11,9 @@ const Profile: preact.FunctionalComponent<Props> = props => {
     const [time, setTime] = useState<number>(Date.now());
     const [count, setCount] = useState<number>(0);
 
-    let timer: number;
-
     // gets called when this route is navigated to
     useEffect(() => {
-        timer = window.setInterval(() => setTime(Date.now()), 1000);
+       const timer = window.setInterval(() => setTime(Date.now()), 1000);
 
         // gets called just before navigating away from the route
         return () => {
