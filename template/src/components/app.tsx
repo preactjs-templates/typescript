@@ -1,4 +1,4 @@
-import { Component, h } from "preact";
+import { h } from "preact";
 import { Route, Router, RouterOnChangeArgs } from "preact-router";
 
 import Home from "../routes/home";
@@ -10,22 +10,22 @@ if ((module as any).hot) {
     require("preact/debug");
 }
 
-export default class App extends Component {
-    public currentUrl?: string;
-    public handleRoute = (e: RouterOnChangeArgs) => {
-        this.currentUrl = e.url;
+const App: preact.FunctionalComponent = () => {
+    let currentUrl: string;
+    const handleRoute = (e: RouterOnChangeArgs) => {
+        currentUrl = e.url;
     };
 
-    public render() {
-        return (
-            <div id="app">
-                <Header />
-                <Router onChange={this.handleRoute}>
-                    <Route path="/" component={Home} />
-                    <Route path="/profile/" component={Profile} user="me" />
-                    <Route path="/profile/:user" component={Profile} />
-                </Router>
-            </div>
-        );
-    }
-}
+    return (
+        <div id="app">
+            <Header />
+            <Router onChange={handleRoute}>
+                <Route path="/" component={Home} />
+                <Route path="/profile/" component={Profile} user="me" />
+                <Route path="/profile/:user" component={Profile} />
+            </Router>
+        </div>
+    );
+};
+
+export default App;

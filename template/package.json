@@ -53,10 +53,11 @@
         "css-loader": "^1.0.1"
     },
     "dependencies": {
-        "preact": "^8.5.2",
-        "preact-compat": "^3.18.4",
-        "preact-render-to-string": "^4.1.0",
-        "preact-router": "^2.6.1"
+        "preact": "^10.0.0",
+        "preact-jsx-chai": "^3.0.0",
+        "preact-markup": "^2.0.0",
+        "preact-render-to-string": "^5.0.6",
+        "preact-router": "^3.0.1"
     },
     "peerDependencies": {
         "prettier": ">1.0.0",
