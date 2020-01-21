@@ -4,7 +4,7 @@
     "version": "0.0.0",
     "license": "MIT",
     "scripts": {
-        "start": "per-env",
+        "start": "by-node-env",
         "start:production": "npm run -s serve",
         "start:development": "npm run -s dev",
         "build": "preact build",
@@ -37,7 +37,7 @@
         "identity-obj-proxy": "^3.0.0",
         "jest": "^23.6.0",
         "lint-staged": "^8.1.0",
-        "per-env": "^1.0.2",
+        "by-node-env": "^2.0.1",
         "preact-cli": "^3.0.0-next.19",
         "preact-render-spy": "^1.3.0",
         "prettier": "^1.15.3",
