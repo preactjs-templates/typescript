@@ -1,8 +1,7 @@
-import { h } from "preact";
+import preact, { h } from "preact";
 import * as style from "./style.css";
 
-interface Props {}
-const Home: preact.FunctionalComponent<Props> = props => {
+const Home: preact.FunctionalComponent = () => {
     return (
         <div class={style.home}>
             <h1>Home</h1>

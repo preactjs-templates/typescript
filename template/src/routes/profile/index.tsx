@@ -1,19 +1,19 @@
-import { h } from "preact";
-import { useCallback, useEffect, useState } from "preact/hooks";
+import preact, { h } from "preact";
+import { useEffect, useState } from "preact/hooks";
 import * as style from "./style.css";
 
 interface Props {
     user: string;
 }
 
-const Profile: preact.FunctionalComponent<Props> = props => {
+const Profile: preact.FunctionalComponent<Props> = (props: Props) => {
     const { user } = props;
     const [time, setTime] = useState<number>(Date.now());
     const [count, setCount] = useState<number>(0);
 
     // gets called when this route is navigated to
     useEffect(() => {
-       const timer = window.setInterval(() => setTime(Date.now()), 1000);
+        const timer = window.setInterval(() => setTime(Date.now()), 1000);
 
         // gets called just before navigating away from the route
         return () => {
