@@ -1,6 +1,6 @@
 {
     "private": true,
-    "name": "fix-me",
+    "name": "{{ name }}",
     "version": "0.0.0",
     "license": "MIT",
     "scripts": {
@@ -29,7 +29,7 @@
     ],
     "peerDependencies": {
         "prettier": ">1.0.0",
-        "tslint": ">5.0.0"
+        "eslint": ">6.0.0"
     },
     "dependencies": {
         "preact": "^10.3.1",
