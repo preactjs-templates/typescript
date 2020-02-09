@@ -58,7 +58,6 @@
         "prettier": "^1.19.1",
         "ts-jest": "^25.2.0",
         "ts-loader": "^6.2.1",
-        "tslint": "^6.0.0",
         "typescript": "^3.7.5",
         "typings-for-css-modules-loader": "^1.7.0"
     }
