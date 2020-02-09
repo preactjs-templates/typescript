@@ -1,4 +1,4 @@
-import preact, { h } from "preact";
+import { FunctionalComponent, h } from "preact";
 import { Route, Router, RouterOnChangeArgs } from "preact-router";
 
 import Home from "../routes/home";
@@ -11,7 +11,7 @@ if ((module as any).hot) {
     require("preact/debug");
 }
 
-const App: preact.FunctionalComponent = () => {
+const App: FunctionalComponent = () => {
     let currentUrl: string;
     const handleRoute = (e: RouterOnChangeArgs) => {
         currentUrl = e.url;
