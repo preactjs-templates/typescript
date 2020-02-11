@@ -1,7 +1,6 @@
-import { Component, h } from "preact";
+import { h } from "preact";
 // See: https://github.com/mzgoddard/preact-render-spy
-import { deep, shallow } from "preact-render-spy";
-import { Link } from "preact-router/match";
+import { shallow } from "preact-render-spy";
 import Header from "../components/header";
 
 describe("Initial Test of the Header", () => {
