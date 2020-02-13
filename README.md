@@ -31,7 +31,7 @@ your machine it will start the development server on a random port.
 
 -   `npm run build`: Production-ready build
 
--   `npm run lint`: Pass TypeScript files using TSLint
+-   `npm run lint`: Pass TypeScript files using ESLint
 
 -   `npm run test`: Run Jest and
     [`preact-render-spy`](https://github.com/mzgoddard/preact-render-spy) for
