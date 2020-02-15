@@ -35,7 +35,6 @@
         "preact-router": "^3.2.1"
     },
     "devDependencies": {
-        "@types/react": "^16.9.19",
         "@types/jest": "^25.1.2",
         "@types/webpack-env": "^1.15.1",
         "@typescript-eslint/eslint-plugin": "^2.19.0",
