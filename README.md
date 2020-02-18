@@ -21,6 +21,7 @@ Development server runs on port `8080`. If the default port is already in use on
 your machine it will start the development server on a random port.
 
 ## Commands
+-   `npm install`: Installs dependencies
 
 -   `npm run start`: Runs `serve` or `dev`, depending on `NODE_ENV` value.
     Defaults to `dev server`
@@ -42,7 +43,7 @@ your machine it will start the development server on a random port.
 The `typescript` template provides a basic test setup with Jest and
 [`preact-render-spy`](https://github.com/mzgoddard/preact-render-spy). You are
 free to change preact-render-spy with any other assertion library. The advantage
-of it is that it supports a similiar terminology and feature set as the Enzyme
+of it is that it supports a similar terminology and feature set as the Enzyme
 library for testing React applications.
 
 You can run all additional Jest CLI commands with the `npm run test` command as
