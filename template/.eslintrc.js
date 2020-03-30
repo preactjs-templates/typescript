@@ -19,7 +19,7 @@ module.exports = {
         ecmaFeatures: {
             jsx: true
         },
-        project: "./tsconfig.json",
+        project: "./tsconfig.eslint.json",
     },
     rules: {
         "react/no-unknown-property": ["error", { ignore: ["class"] }],
