@@ -11,18 +11,16 @@
         "serve": "preact build && sirv build --port 8080 --cors --single",
         "dev": "preact watch",
         "lint": "eslint src/**/*.{js,jsx,ts,tsx}",
-        "test": "jest ./tests",
-        "precommit": "lint-staged"
+        "test": "jest ./tests"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged"
+        }
     },
     "lint-staged": {
-        "*.{css,md,scss}": [
-            "prettier --write",
-            "git add"
-        ],
-        "*.{js,jsx,ts,tsx}": [
-            "eslint --fix",
-            "git add"
-        ]
+        "*.{css,md,scss}": "prettier --write",
+        "*.{js,jsx,ts,tsx}": "eslint --fix"
     },
     "eslintIgnore": [
         "build/*"
