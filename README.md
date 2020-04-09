@@ -23,9 +23,6 @@ your machine it will start the development server on a random port.
 ## Commands
 -   `npm install`: Installs dependencies
 
--   `npm run start`: Runs `serve` or `dev`, depending on `NODE_ENV` value.
-    Defaults to `dev server`
-
 -   `npm run dev`: Run a development, HMR server
 
 -   `npm run serve`: Run a production-like server
