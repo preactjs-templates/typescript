@@ -2,19 +2,24 @@ module.exports = {
     env: {
         browser: true
     },
+    plugins: ["@typescript-eslint"],
     extends: [
-        "plugin:react/recommended",
+        "eslint:recommended",
+        "plugin:@typescript-eslint/eslint-recommended",
         "plugin:@typescript-eslint/recommended",
+        "plugin:@typescript-eslint/recommended-requiring-type-checking",
+        "plugin:react/recommended",
+        "plugin:react-hooks/recommended",
+        "plugin:prettier/recommended",
         "prettier/@typescript-eslint",
-        "plugin:prettier/recommended"
+        "prettier/react"
     ],
     parser: "@typescript-eslint/parser",
     parserOptions: {
         ecmaFeatures: {
             jsx: true
         },
-        ecmaVersion:  2018,
-        sourceType: "module",
+        project: "./tsconfig.eslint.json",
     },
     rules: {
         "react/no-unknown-property": ["error", { ignore: ["class"] }],
