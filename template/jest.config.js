@@ -4,6 +4,7 @@ module.exports = {
     },
     verbose: true,
     setupFiles: [
+        "<rootDir>/src/tests/__mocks__/setupTests.js",
         "<rootDir>/src/tests/__mocks__/browserMocks.js"
     ],
     testURL: "http://localhost:8080",
