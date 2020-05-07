@@ -31,17 +31,16 @@ your machine it will start the development server on a random port.
 
 -   `npm run lint`: Pass TypeScript files using ESLint
 
--   `npm run test`: Run Jest and
-    [`preact-render-spy`](https://github.com/mzgoddard/preact-render-spy) for
+-   `npm run test`: Run Jest and Enzyme with
+    [`enzyme-adapter-preact-pure`](https://github.com/preactjs/enzyme-adapter-preact-pure) for
     your tests
 
 ### How to Test
 
-The `typescript` template provides a basic test setup with Jest and
-[`preact-render-spy`](https://github.com/mzgoddard/preact-render-spy). You are
-free to change preact-render-spy with any other assertion library. The advantage
-of it is that it supports a similar terminology and feature set as the Enzyme
-library for testing React applications.
+The `typescript` template provides a basic test setup with Jest, Enzyme and
+[`enzyme-adapter-preact-pure`](https://github.com/preactjs/enzyme-adapter-preact-pure).
+You are free to change Enzyme with any other testing library
+(eg. [Preact Testing Library](https://testing-library.com/docs/preact-testing-library/intro)).
 
 You can run all additional Jest CLI commands with the `npm run test` command as
 described in the
