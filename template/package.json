@@ -44,15 +44,12 @@
         "eslint-plugin-react": "^7.19.0",
         "eslint-plugin-react-hooks": "^3.0.0",
         "husky": "^4.2.1",
-        "identity-obj-proxy": "^3.0.0",
         "jest": "^25.1.0",
         "jest-preset-preact": "^1.0.0",
         "lint-staged": "^10.0.7",
         "preact-cli": "^3.0.0-next.19",
         "prettier": "^1.19.1",
         "sirv-cli": "^1.0.0-next.3",
-        "ts-jest": "^25.2.0",
-        "ts-loader": "^6.2.1",
         "typescript": "^3.7.5",
         "typings-for-css-modules-loader": "^1.7.0"
     }
