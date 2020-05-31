@@ -39,7 +39,6 @@ export default {
                 extensions: config.resolve.extensions
             })
         ]
-      
 
         // Use any `index` file, not just index.js
         config.resolve.alias["preact-cli-entrypoint"] = resolve(
