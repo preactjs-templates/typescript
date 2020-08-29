@@ -6,12 +6,6 @@ import Profile from "../routes/profile";
 import NotFoundPage from "../routes/notfound";
 import Header from "./header";
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-if ((module as any).hot) {
-    // tslint:disable-next-line:no-var-requires
-    require("preact/debug");
-}
-
 const App: FunctionalComponent = () => {
     let currentUrl: string;
     const handleRoute = (e: RouterOnChangeArgs) => {
