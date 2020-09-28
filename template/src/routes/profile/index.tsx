@@ -1,6 +1,6 @@
-import { FunctionalComponent, h } from "preact";
-import { useEffect, useState } from "preact/hooks";
-import * as style from "./style.css";
+import { FunctionalComponent, h } from 'preact';
+import { useEffect, useState } from 'preact/hooks';
+import style from './style.css';
 
 interface Props {
     user: string;
@@ -16,13 +16,13 @@ const Profile: FunctionalComponent<Props> = (props: Props) => {
         const timer = window.setInterval(() => setTime(Date.now()), 1000);
 
         // gets called just before navigating away from the route
-        return () => {
+        return (): void => {
             clearInterval(timer);
         };
     }, []);
 
     // update the current time
-    const increment = () => {
+    const increment = (): void => {
         setCount(count + 1);
     };
 
@@ -34,7 +34,7 @@ const Profile: FunctionalComponent<Props> = (props: Props) => {
             <div>Current time: {new Date(time).toLocaleString()}</div>
 
             <p>
-                <button onClick={increment}>Click Me</button> Clicked {count}{" "}
+                <button onClick={increment}>Click Me</button> Clicked {count}{' '}
                 times.
             </p>
         </div>
