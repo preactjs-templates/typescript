@@ -1,4 +1,4 @@
-# Preact TypeScript starter project
+# {{ name }}
 
 ## CLI Commands
 *   `npm install`: Installs dependencies
