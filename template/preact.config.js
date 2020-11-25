@@ -1,4 +1,5 @@
 import { resolve } from "path";
+import { TsconfigPathsPlugin } from 'tsconfig-paths-webpack-plugin'
 
 export default {
     /**
@@ -19,6 +20,21 @@ export default {
                 disableLocalsExport: true
             }
         });
+
+        // Add TsconfigPathsPlugin for webpack
+        // This allows webpack to resolve your imports whose location depends
+        // on the `baseUrl` and `paths` fields of your `tsconfig.json`
+        // https://github.com/dividab/tsconfig-paths-webpack-plugin#tsconfig-paths-webpack-plugin
+        config.resolve.plugins = [
+            ...(config.resolve.plugins || []),
+            new TsconfigPathsPlugin({
+                // We use `config.resolve.extensions` to load the same extensions
+                // as webpack already does. If you are to edit this property,
+                // do it before this call if you want TsconfigPathsPlugin
+                // to beneficiate from it
+                extensions: config.resolve.extensions
+            })
+        ]
 
         // Use any `index` file, not just index.js
         config.resolve.alias["preact-cli-entrypoint"] = resolve(
