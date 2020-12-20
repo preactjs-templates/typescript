@@ -20,6 +20,9 @@ export default {
             }
         });
 
+        // Resolve absolute paths to the source directory.
+        config.resolve.modules.push(env.src);
+
         // Use any `index` file, not just index.js
         config.resolve.alias["preact-cli-entrypoint"] = resolve(
             process.cwd(),
