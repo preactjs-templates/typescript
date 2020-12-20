@@ -14,16 +14,7 @@
         "parser": "@typescript-eslint/parser",
         "extends": ["preact", "plugin:@typescript-eslint/recommended"],
         "ignorePatterns": [
-            "build/",
-            "*.css.d.ts"
-        ],
-        "overrides": [
-            {
-                "files": ["*.js"],
-                "rules": {
-                    "@typescript-eslint/explicit-function-return-type": "off"
-                }
-            }
+            "build/"
         ]
     },
     "dependencies": {
@@ -32,7 +23,6 @@
         "preact-router": "^3.2.1"
     },
     "devDependencies": {
-        "@teamsupercell/typings-for-css-modules-loader": "^2.2.0",
         "@types/enzyme": "^3.10.5",
         "@types/jest": "^26.0.8",
         "@typescript-eslint/eslint-plugin": "^2.25.0",
