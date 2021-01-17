@@ -9,7 +9,7 @@
 
 *   `npm run build`: Production-ready build
 
-*   `npm run lint`: Pass TypeScript files using TSLint
+*   `npm run lint`: Pass TypeScript files using ESLint
 
 *   `npm run test`: Run Jest and Enzyme with
     [`enzyme-adapter-preact-pure`](https://github.com/preactjs/enzyme-adapter-preact-pure) for
