@@ -10,47 +10,38 @@
         "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}'",
         "test": "jest ./tests"
     },
-    "husky": {
-        "hooks": {
-            "pre-commit": "lint-staged"
-        }
+    "eslintConfig": {
+        "parser": "@typescript-eslint/parser",
+        "extends": ["preact", "plugin:@typescript-eslint/recommended"],
+        "ignorePatterns": [
+            "build/"
+        ]
     },
-    "lint-staged": {
-        "*.{css,md,scss}": "prettier --write",
-        "*.{js,jsx,ts,tsx}": "eslint --fix"
-    },
-    "eslintIgnore": [
-        "build/*"
-    ],
     "dependencies": {
         "preact": "^10.3.1",
-        "preact-jsx-chai": "^3.0.0",
-        "preact-markup": "^2.0.0",
         "preact-render-to-string": "^5.1.4",
         "preact-router": "^3.2.1"
     },
     "devDependencies": {
-        "@teamsupercell/typings-for-css-modules-loader": "^2.2.0",
         "@types/enzyme": "^3.10.5",
         "@types/jest": "^26.0.8",
-        "@types/webpack-env": "^1.15.1",
         "@typescript-eslint/eslint-plugin": "^2.25.0",
         "@typescript-eslint/parser": "^2.25.0",
-        "css-loader": "^3.5.3",
         "enzyme": "^3.11.0",
         "enzyme-adapter-preact-pure": "^2.2.0",
         "eslint": "^6.8.0",
-        "eslint-config-prettier": "^6.10.1",
-        "eslint-plugin-prettier": "^3.1.2",
-        "eslint-plugin-react": "^7.19.0",
-        "eslint-plugin-react-hooks": "^3.0.0",
-        "husky": "^4.2.1",
+        "eslint-config-preact": "^1.1.1",
         "jest": "^26.2.2",
         "jest-preset-preact": "^4.0.2",
-        "lint-staged": "^10.0.7",
         "preact-cli": "^3.0.0",
-        "prettier": "^1.19.1",
         "sirv-cli": "^1.0.0-next.3",
         "typescript": "^3.7.5"
+    },
+    "jest": {
+        "preset": "jest-preset-preact",
+        "setupFiles": [
+            "<rootDir>/tests/__mocks__/browserMocks.ts",
+            "<rootDir>/tests/__mocks__/setupTests.ts"
+        ]
     }
 }
