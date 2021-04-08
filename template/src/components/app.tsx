@@ -8,7 +8,7 @@ import Header from './header';
 
 const App: FunctionalComponent = () => {
     return (
-        <div id="app">
+        <div id="preact_root">
             <Header />
             <Router>
                 <Route path="/" component={Home} />
