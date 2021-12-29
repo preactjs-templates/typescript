@@ -15,6 +15,6 @@ html, body {
 	box-sizing: border-box;
 }
 
-#app {
+#preact_root {
 	height: 100%;
 }
