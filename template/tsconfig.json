@@ -17,5 +17,5 @@
 			"react-dom": ["./node_modules/preact/compat"]
 		}
 	},
-	"include": ["src/**/*"]
+	"include": ["node_modules/preact-cli/types.d.ts", "src/**/*"]
 }
