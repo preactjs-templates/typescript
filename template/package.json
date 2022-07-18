@@ -8,7 +8,7 @@
         "serve": "sirv build --cors --single",
         "dev": "preact watch",
         "lint": "eslint src",
-        "test": "jest ./tests"
+        "test": "jest"
     },
     "eslintConfig": {
         "parser": "@typescript-eslint/parser",
