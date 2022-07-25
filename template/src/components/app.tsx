@@ -1,4 +1,3 @@
-import { h } from 'preact';
 import { Route, Router } from 'preact-router';
 
 import Header from './header';
