@@ -5,7 +5,7 @@ interface Props {
 }
 
 // Note: `user` comes from the URL, courtesy of our router
-const Profile = ({ user }: Props) => {
+export default function Profile({ user }: Props) {
 	const [time, setTime] = useState<number>(Date.now());
 	const [count, setCount] = useState<number>(10);
 
@@ -27,6 +27,4 @@ const Profile = ({ user }: Props) => {
 			</p>
 		</div>
 	);
-};
-
-export default Profile;
+}
