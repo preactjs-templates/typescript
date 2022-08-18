@@ -1,4 +1,3 @@
-import { Link } from 'preact-router/match';
 import style from './style.module.css';
 
 export function Header() {
@@ -9,15 +8,9 @@ export function Header() {
 				<h1>Preact CLI</h1>
 			</a>
 			<nav>
-				<Link activeClassName={style.active} href="/">
-					Home
-				</Link>
-				<Link activeClassName={style.active} href="/profile">
-					Me
-				</Link>
-				<Link activeClassName={style.active} href="/profile/john">
-					John
-				</Link>
+				<a href="/">Home</a>
+				<a href="/profile">Me</a>
+				<a href="/profile/john">John</a>
 			</nav>
 		</header>
 	)
