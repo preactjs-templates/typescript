@@ -1,6 +1,5 @@
 import { h } from 'preact';
 import { useEffect, useState } from 'preact/hooks';
-import style from './style.css';
 
 interface Props {
 	user: string;
@@ -9,7 +8,7 @@ interface Props {
 // Note: `user` comes from the URL, courtesy of our router
 const Profile = ({ user }: Props) => {
 	const [time, setTime] = useState<number>(Date.now());
-	const [count, setCount] = useState<number>(0);
+	const [count, setCount] = useState<number>(10);
 
 	useEffect(() => {
 		let timer = setInterval(() => setTime(Date.now()), 1000);
@@ -17,7 +16,7 @@ const Profile = ({ user }: Props) => {
 	}, []);
 
 	return (
-		<div class={style.profile}>
+		<div>
 			<h1>Profile: {user}</h1>
 			<p>This is the user profile for a user named {user}.</p>
 
