@@ -10,7 +10,7 @@
 ## Usage
 
 ```bash
-$ npx preact-cli create typescript my-project
+$ [npm init / yarn create] preact-cli typescript my-project
 $ cd my-project
 $ npm install
 $ npm run dev
